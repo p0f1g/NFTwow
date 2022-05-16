@@ -1,0 +1,11 @@
+@include font-face($family-name: Inter, $file-name: Inter-Regular);
+@include font-face(
+  $family-name: Inter,
+  $file-name: Inter-Medium,
+  $font-weight: 500
+);
+@include font-face(
+  $family-name: Inter,
+  $file-name: Inter-Bold,
+  $font-weight: 700
+);

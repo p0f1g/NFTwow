@@ -1,0 +1,75 @@
+.btn {
+  display: inline-block;
+  margin: 0;
+  border-radius: $border-radius;
+  border: 0;
+  padding: 10px 12px;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  user-select: none;
+  text-align: center;
+  font-size: 16px;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  text-decoration: none;
+  text-transform: none;
+  color: $color-btn-text;
+  background-color: $color-btn;
+  background-image: none;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: $color-btn-text;
+    background-color: darken($color-btn, 10%);
+  }
+
+  // &:visited {
+  //   color: $color-text;
+  // }
+
+  &--disabled,
+  &:disabled {
+    opacity: 0.9;
+    cursor: not-allowed;
+    color: $color-text;
+
+    @at-root a.btn--disabled {
+      pointer-events: none;
+    }
+  }
+
+  &-primary {
+    background-color: $color-btn-primary;
+
+    &:hover,
+    &:focus {
+      background-color: darken($color-btn-primary, 10%);
+    }
+  }
+
+  &-secondary {
+    background-color: $color-btn-secondary;
+
+    &:hover,
+    &:focus {
+      background-color: darken($color-btn-secondary, 10%);
+    }
+  }
+
+  &-bordered {
+    background-color: transparent;
+    border: 1px solid $color-btn-text;
+    transition: box-shadow 0.25s ease;
+
+    &:hover,
+    &:focus {
+      background-color: transparent;
+      box-shadow: 0 0 6px rgb(0 0 0 / 25%);
+    }
+  }
+}

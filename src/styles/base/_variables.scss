@@ -1,0 +1,36 @@
+@use 'sass:color';
+
+$font-size-base: 16px;
+$font-family: 'Inter', sans-serif;
+$line-height: 1.5;
+
+$border-radius: 8px;
+
+$color-dark: #111;
+$color-dark-1: #555;
+$color-dark-2: #777;
+$color-dark-3: #999;
+$color-light: #fff;
+$color-light-1: #eee;
+$color-light-2: #ddd;
+$color-light-3: #ccc;
+$color-green: #42ffd2;
+$color-green-dark: #00a47c;
+$color-red: #ff4242;
+$color-red-dark: #c60202;
+
+$color-text: $color-dark-1;
+$color-bg: $color-light-1;
+$color-btn: $color-light;
+$color-btn-primary: $color-green;
+$color-btn-secondary: $color-light-1;
+$color-btn-text: $color-dark;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);
