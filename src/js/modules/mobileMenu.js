@@ -1,6 +1,6 @@
 export default function mobileMenu() {
   const burger = document.querySelector('.burger');
-  const menu = document.querySelector('.menu');
+  const menu = document.querySelector('.header__menu');
 
   const toggleMenu = () => {
     burger.classList.toggle('burger--close');

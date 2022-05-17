@@ -6,16 +6,31 @@
 .menu {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 22px;
 }
 
 .menu__link {
   position: relative;
   display: block;
-  padding: 0.5em 1em;
+  font-weight: 500;
+  color: $color-dark;
 
-  &.active {
-    color: $color-accent;
+  &::before {
+    content: '';
+    background-color: $color-dark;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    transition: width 0.25s ease-in-out;
+  }
+  &:hover {
+    color: $color-dark;
   }
 
+  &:hover::before {
+    width: 100%;
+  }
 }

@@ -1,3 +1,9 @@
 <header class='header'>
-
+  {% include 'burger/burger.njk'%}
+  {% include 'logo/logo.njk' %}
+  <div class='header__menu'>
+    {% include 'form-search/form-search.njk' %}
+    {% include 'nav/nav.njk' %}
+  </div>
+  {% include 'user/user.njk'%}
 </header>
