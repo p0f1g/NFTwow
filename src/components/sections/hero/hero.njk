@@ -1,0 +1,38 @@
+{% from 'btn/btn.njk' import btn %}
+<section class='hero'>
+  <div class='intro'>
+    <div class='intro__inner'>
+      <div class='intro__welcome'>Welcome</div>
+      <h1 class='title'>Trade NFTs with zero fees</h1>
+      <h2 class='subtitle'>We are the world’s highest-rated online marketplace</h2>
+      <div class='intro__buttons'>
+        {{ btn({
+            href: '#',
+            className: 'btn-primary',
+            text: 'Explore NFTs'
+          }) }}
+          {{ btn({
+            href: '#',
+            text: 'Create Your Own'
+          }) }}
+      </div>
+    </div>
+    <div class='hero__img'>
+      <picture>
+        <source srcset='./images/hero/hero-lg.png' type='image/png' media='(min-width: 768px)'>
+        <img src='./images/hero/hero-sm.png' alt=''>
+      </picture>
+    </div>
+  </div> {# /intro #}
+
+  {% include 'testimonial/testimonial.njk' %}
+
+  <div class='hero__img'>
+    <picture>
+      <source srcset='./images/hero/hero-xxl.png' type='image/png' media='(min-width: 1200px)'>
+      <source srcset='./images/hero/hero-lg.png' type='image/png' media='(min-width: 992px)'>
+      <img src='./images/hero/hero-image-lg.png' alt=''>
+    </picture>
+  </div>
+
+</section>

@@ -1,0 +1,33 @@
+.testimonial {
+  display: flex;
+  max-width: 460px;
+}
+
+.testimonial__img {
+  width: 25%;
+
+  @include media-up(sm) {
+    width: 20%;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+.testimonial__content {
+  width: 75%;
+  padding: 15px 10px 15px 25px;
+
+  @include media-up(sm) {
+    width: 80%;
+  }
+}
+.testimonial__name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  color: $color-dark;
+  margin-bottom: 12px;
+}
