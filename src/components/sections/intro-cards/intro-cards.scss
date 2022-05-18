@@ -1,0 +1,13 @@
+.intro-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  @include media-up(lg) {
+    flex-direction: row;
+
+    .intro-card {
+      width: 50%;
+    }
+  }
+}

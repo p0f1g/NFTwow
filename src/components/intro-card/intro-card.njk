@@ -1,0 +1,23 @@
+{% from 'btn/btn.njk' import btn %}
+<div class='intro-card intro-card--white'>
+  <div class='intro-card__content'>
+    <div class='intro-card__icon'>
+      <svg width='32' height='32'>
+        <use xlink:href='images/svg/sprite.svg#icon-card1'></use>
+      </svg>
+    </div>
+    <div class='intro-card__title'>Claim a Free Limited NFT</div>
+    <div class='intro-card__text'>New members who sign up between 3/5 and 3/11 can claim a free NFT by creator Cyle Sim.</div>
+    {{
+      btn({
+        href: '#',
+        className: 'btn-secondary',
+        text: 'Claim Now'
+      })
+    }}
+
+  </div>
+  <div class='intro-card__img'>
+    <img src='./images/intro-cards/1.png' alt=''>
+  </div>
+</div>
