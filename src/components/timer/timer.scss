@@ -18,14 +18,32 @@
   background-color: transparent;
   background-image: none;
   cursor: pointer;
+  transition: box-shadow 0.25s ease;
+
+  &:focus,
+  &:hover {
+    box-shadow: 0 0 0 0.2em rgba($color-dark-3, 0.5);
+  }
 
   &--red {
     border-color: #ff005c;
     color: #ff005c;
+
+    &:focus,
+    &:hover {
+      color: #ff005c;
+      box-shadow: 0 0 0 0.2em rgba(#ff005c, 0.4);
+    }
   }
 
   &--violet {
     border-color: #aa00ff;
     color: #aa00ff;
+
+    &:focus,
+    &:hover {
+      color: #aa00ff;
+      box-shadow: 0 0 0 0.2em rgba(#aa00ff, 0.4);
+    }
   }
 }

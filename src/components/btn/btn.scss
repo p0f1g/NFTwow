@@ -19,13 +19,13 @@
   background-color: $color-btn;
   background-image: none;
   cursor: pointer;
-  transition: background-color 0.25s ease;
+  transition: box-shadow 0.25s ease;
 
   &:hover,
   &:focus {
     text-decoration: none;
     color: $color-btn-text;
-    background-color: darken($color-btn, 10%);
+    box-shadow: 0 0 0 0.2em rgba($color-dark-3, 0.5);
   }
 
   // &:visited {
@@ -48,7 +48,8 @@
 
     &:hover,
     &:focus {
-      background-color: darken($color-btn-primary, 10%);
+      background-color: $color-btn-primary;
+      box-shadow: 0 0 0 0.2em rgba($color-green-dark, 0.5);
     }
   }
 
@@ -57,7 +58,7 @@
 
     &:hover,
     &:focus {
-      background-color: darken($color-btn-secondary, 10%);
+      box-shadow: 0 0 0 0.2em rgba($color-dark-3, 0.5);
     }
   }
 
