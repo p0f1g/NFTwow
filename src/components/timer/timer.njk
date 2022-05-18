@@ -1,0 +1,13 @@
+{% macro timer(props) %}
+  <a class='timer {% if props.className %}{{ props.className }}{% endif %}' href={{ props.href }}>{{props.text}}</a>
+{% endmacro %}
+
+{# HOW TO USE
+{% from 'timer/timer.njk' import timer %}
+{{
+  timer({
+    href: '#',
+    className: '',
+    text: '00:00:00:00'
+  })
+}} #}

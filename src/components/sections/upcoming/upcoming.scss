@@ -1,0 +1,37 @@
+.upcoming {
+  margin-bottom: 55px;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.section-inner {
+  margin-right: 25px;
+}
+
+.section-title {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.5;
+  color: $color-dark;
+  margin-bottom: 0.73em;
+}
+
+.upcoming__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 55px;
+
+  @include media-up(lg) {
+    flex-direction: row;
+
+    .intro-card {
+      width: 50%;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{% from 'btn/btn.njk' import btn %}
+{% from 'timer/timer.njk' import timer %}
+<section class='upcoming'>
+  <div class='section-header'>
+    <div class='section-inner'>
+      <h2 class='section-title'>Upcoming Drops</h2>
+      <div class='section-text'>
+        <p>Be the first to get your hands on limited NFT drops, exclusive to NFTwow.</p>
+      </div>
+    </div>
+    {{
+      btn({
+        href: '#',
+        className: '',
+        text: 'Explore'
+      })
+    }}
+  </div> {# /section-header #}
+
+  <div class='upcoming__cards'>
+
+    <div class='intro-card intro-card--pink'>
+      <div class='intro-card__content'>
+        <div class='intro-card__title'>CHARBlobs</div>
+        <div class='intro-card__text'>This new collection by Muxhy recreates some of his most famous characters in 3D.</div>
+        {{ timer({
+            href: '#',
+            className: 'timer--red',
+            text: '00:01:09:34'
+          }) }}
+      </div>
+      <div class='intro-card__img'>
+        <img src='./images/intro-cards/3.png' alt='CHARBlobs'>
+      </div>
+    </div>{# /intro-card #}
+
+    <div class='intro-card intro-card--lavender'>
+      <div class='intro-card__content'>
+        <div class='intro-card__title'>Jeanie Tyu</div>
+        <div class='intro-card__text'>Artist Jeanie Tyu’s new exhibition in Tokyo consists of ten artworks which will be available for sale on NFTwow.</div>
+          {{ timer({
+            href: '#',
+            className: 'timer--violet',
+            text: '02:03:32:17'
+          }) }}
+      </div>
+      <div class='intro-card__img'>
+        <img src='./images/intro-cards/4.png' alt='Jeanie Tyu'>
+      </div>
+    </div>{# /intro-card #}
+
+  </div>{# /upcoming__cards #}
+</section>

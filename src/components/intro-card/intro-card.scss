@@ -2,6 +2,7 @@
   display: flex;
   gap: 20px;
   padding: 20px;
+  border-radius: $border-radius;
 
   @include media-up(sm) {
     padding: 32px;
@@ -11,6 +12,14 @@
   &--white {
     background-color: $color-light;
   }
+
+  &--pink {
+    background-color: #ffd8e6;
+  }
+
+  &--lavender {
+    background-color: #f2d8ff;
+  }
 }
 
 .intro-card__content {
@@ -18,7 +27,8 @@
   flex-direction: column;
   width: 50%;
 
-  .btn {
+  .btn,
+  .timer {
     align-self: flex-start;
     margin-top: auto;
   }

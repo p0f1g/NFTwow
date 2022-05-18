@@ -1,0 +1,31 @@
+.timer {
+  display: inline-block;
+  margin: 0;
+  border-radius: $border-radius;
+  border: 1px solid;
+  border-color: inherit;
+  padding: 10px 12px;
+  vertical-align: middle;
+  white-space: nowrap;
+  user-select: none;
+  font-size: 16px;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  text-decoration: none;
+  text-transform: none;
+  color: inherit;
+  background-color: transparent;
+  background-image: none;
+  cursor: pointer;
+
+  &--red {
+    border-color: #ff005c;
+    color: #ff005c;
+  }
+
+  &--violet {
+    border-color: #aa00ff;
+    color: #aa00ff;
+  }
+}
