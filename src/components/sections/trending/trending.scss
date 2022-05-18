@@ -1,0 +1,19 @@
+.trending {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 55px;
+
+  @include media-up(lg) {
+    flex-direction: row;
+
+    .trending-card {
+      width: 50%;
+    }
+  }
+}
+.trending-card {
+  border-radius: $border-radius;
+  background-color: $color-light;
+  padding: 32px 32px 7px 32px;
+}

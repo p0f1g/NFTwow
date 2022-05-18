@@ -1,0 +1,119 @@
+.trending-list {
+  counter-set: trend;
+}
+
+.trending__item {
+  counter-increment: trend;
+  border-top: 1px solid $color-light-1;
+}
+
+.trending__link {
+  text-decoration: none;
+}
+
+.trend-nft {
+  display: flex;
+  align-items: center;
+  padding: 25px 0;
+}
+
+.trend-nft__img {
+  position: relative;
+  flex-shrink: 0;
+  margin-right: 24px;
+
+  &::after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: $color-green;
+    background-image: url(../images/svg/check.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+  }
+  img {
+    display: block;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
+
+.trend-nft__content {
+  width: 100%;
+}
+
+.trend-nft__content-top {
+  @include media-up(sm) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+  }
+}
+
+.trend-nft__name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  color: $color-dark;
+
+  @include media-down(sm) {
+    margin-bottom: 12px;
+  }
+
+  &::before {
+    content: '#' counter(trend) ' - ';
+  }
+}
+
+.trend-nft__percent {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+
+  &--plus {
+    color: $color-green-dark;
+  }
+
+  &--minus {
+    color: $color-red-dark;
+  }
+}
+
+.trend-nft__prices {
+  display: none;
+
+  @include media-up(sm) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.trend-nft__price-lowest {
+  display: inline-flex;
+  align-items: center;
+}
+
+.trend-nft__price {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 8px;
+
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 20px;
+    margin-right: 8px;
+    background-image: url(../images/icon-price.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
