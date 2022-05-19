@@ -1,5 +1,5 @@
 {% macro nftcard(props) %}
-<div class='nft-card'>
+<a href='{{props.href}}' class='nft-card'>
   <div class='nft-card__img'>
     <img src='./images/ending-soon/{{props.img}}' alt='{{props.name}}'>
   </div>
@@ -15,5 +15,5 @@
       <span class='nft-card__days'>{{props.days}}</span>
     </div>
   </div>
-</div>
+</a>
 {% endmacro %}

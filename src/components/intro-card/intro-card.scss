@@ -5,6 +5,10 @@
   border-radius: $border-radius;
 
   @include media-up(sm) {
+    gap: 32px;
+  }
+
+  @include media-up(xl) {
     padding: 32px;
     gap: 32px;
   }

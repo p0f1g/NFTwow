@@ -4,7 +4,7 @@
   gap: 24px;
   margin-bottom: 55px;
 
-  @include media-up(lg) {
+  @include media-up(md) {
     flex-direction: row;
 
     .intro-card {

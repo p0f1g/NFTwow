@@ -2,6 +2,7 @@
   position: relative;
   border-radius: $border-radius;
   overflow: hidden;
+  display: block;
 }
 
 .nft-card__img {
@@ -24,6 +25,8 @@
   padding: 24px;
   display: flex;
   justify-content: space-between;
+  color: $color-light;
+  background-color: rgba(#000, 0.15);
   backdrop-filter: blur(12px);
 }
 
@@ -48,7 +51,6 @@
 .nft-card__price {
   font-weight: 500;
   font-size: 16px;
-  color: $color-dark;
 }
 
 .nft-card__price {
@@ -76,5 +78,4 @@
   font-weight: 500;
   font-size: 12px;
   text-transform: uppercase;
-  color: $color-dark;
 }

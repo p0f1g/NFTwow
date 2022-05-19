@@ -1,23 +1,26 @@
 {% from 'btn/btn.njk' import btn %}
+{% macro introCard(props) %}
 <div class='intro-card intro-card--white'>
   <div class='intro-card__content'>
+    {% if props.icon %}
     <div class='intro-card__icon'>
       <svg width='32' height='32'>
-        <use xlink:href='images/svg/sprite.svg#icon-card1'></use>
+        <use xlink:href='images/svg/sprite.svg#{{props.icon}}'></use>
       </svg>
     </div>
-    <div class='intro-card__title'>Claim a Free Limited NFT</div>
-    <div class='intro-card__text'>New members who sign up between 3/5 and 3/11 can claim a free NFT by creator Cyle Sim.</div>
+    {% endif %}
+    <div class='intro-card__title'>{{props.title}}</div>
+    <div class='intro-card__text'>{{props.text}}</div>
     {{
       btn({
-        href: '#',
-        className: 'btn-secondary',
-        text: 'Claim Now'
+        href: props.btn.href,
+        className: props.btn.type,
+        text: props.btn.text
       })
     }}
-
   </div>
   <div class='intro-card__img'>
-    <img src='./images/intro-cards/1.png' alt=''>
+    <img src='./images/nft/{{props.img}}' alt='{{props.title}}'>
   </div>
 </div>
+{% endmacro %}

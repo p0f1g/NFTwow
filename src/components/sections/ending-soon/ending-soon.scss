@@ -2,9 +2,31 @@
   margin-bottom: 55px;
 }
 
-.nft-cards {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 365px;
-  gap: 24px;
+.ending-soon__cards {
+  .nft-card {
+    height: 370px;
+  }
+
+  @include media-down(sm) {
+    .nft-card {
+      max-width: 350px;
+      margin: 0 auto;
+    }
+
+    .nft-card:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+
+  @include media-up(sm) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto-fill, 370px);
+    gap: 24px;
+  }
+
+  @include media-up(lg) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+  }
 }
