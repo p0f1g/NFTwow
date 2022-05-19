@@ -1,0 +1,22 @@
+.press {
+  padding: 20px 0;
+  margin-bottom: 55px;
+}
+
+.press__items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 210px);
+  gap: 45px;
+  justify-content: center;
+}
+
+.press-item {
+  display: inline-block;
+  text-decoration: none;
+  transition: opacity 0.25s ease;
+
+  &:hover,
+  &:focus {
+    opacity: 0.9;
+  }
+}
