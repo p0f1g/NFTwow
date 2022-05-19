@@ -1,0 +1,24 @@
+{% from 'btn/btn.njk' import btn %}
+{% from 'learn-card/learn-card.njk' import learnCard %}
+<section class='learn-and-earn'>
+  <div class='section-header'>
+    <div class='section-inner'>
+      <h2 class='section-title'>Learn &amp; Earn</h2>
+      <div class='section-text'>
+        <p>New to NFTs? Start here and build your education.</p>
+      </div>
+    </div>
+    {{
+      btn({
+        href: '#',
+        className: '',
+        text: 'Visit Learn'
+      })
+    }}
+  </div> {# /section-header #}
+  <div class='learn-and-earn__cards'>
+    {% for card in learnCards %}
+      {{ learnCard(card) }}
+    {% endfor %}
+  </div>
+</section>

@@ -1,0 +1,36 @@
+.new-collections {
+  margin-bottom: 55px;
+}
+
+.new-collections__cards {
+  @include media-up(md) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  @include media-up(lg) {
+    gap: 24px;
+  }
+
+  @include media-down(md) {
+    .intro-card:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+
+  .intro-card:nth-child(4n + 1) {
+    background-color: #ffe6d8;
+  }
+
+  .intro-card:nth-child(4n + 2) {
+    background-color: #d8ecff;
+  }
+
+  .intro-card:nth-child(4n + 3) {
+    background-color: #ffd8eb;
+  }
+
+  .intro-card:nth-child(4n + 4) {
+    background-color: #fff4d8;
+  }
+}

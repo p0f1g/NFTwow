@@ -1,0 +1,28 @@
+.learn-and-earn {
+  margin-bottom: 55px;
+}
+
+.learn-and-earn__cards {
+  @include media-down(sm) {
+    .learn-card {
+      max-width: 350px;
+      margin: 0 auto;
+    }
+
+    .learn-card:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+
+  @include media-up(sm) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto-fill, 370px);
+    gap: 24px;
+  }
+
+  @include media-up(lg) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+  }
+}

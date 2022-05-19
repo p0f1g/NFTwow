@@ -1,0 +1,11 @@
+{% macro learnCard(props) %}
+<a href='{{props.href}}' class='learn-card'>
+  <div class='learn-card__img'>
+    <img src='./images/learn/{{props.img}}' alt=''>
+  </div>
+  <div class='learn-card__description'>
+    <div class='learn-card__title'>learn</div>
+    <div class='learn-card__text'>{{props.text}}</div>
+  </div>
+</a>
+{% endmacro %}

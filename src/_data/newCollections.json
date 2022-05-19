@@ -1,0 +1,42 @@
+[
+  {
+    "title": "L’banane",
+    "text": "150 paper bananas, in every shade of yellow on Earth. What more could you want from an NFT?",
+    "img": "lbanana.png",
+    "btn": {
+      "href": "#",
+      "type": "btn-bordered",
+      "text": "Live"
+    }
+  },
+  {
+    "title": "SmokeYe",
+    "text": "These explosive graphics from YeStudio are part of a limited collection, exclusive to NFTwow.",
+    "img": "smokeye.png",
+    "btn": {
+      "href": "#",
+      "type": "btn-bordered",
+      "text": "Live"
+    }
+  },
+  {
+    "title": "C E S R",
+    "text": "U I O P Studio’s new collection is part of a Rome exhibition combining the city’s past and future.",
+    "img": "cesr.png",
+    "btn": {
+      "href": "#",
+      "type": "btn-bordered",
+      "text": "Live"
+    }
+  },
+  {
+    "title": "Fllllow",
+    "text": "This digital sculpture collection by Emmiy Uulo explores digital form and virtual reality NFTs.",
+    "img": "fllllow.png",
+    "btn": {
+      "href": "#",
+      "type": "btn-bordered",
+      "text": "Live"
+    }
+  }
+]

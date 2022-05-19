@@ -1,0 +1,25 @@
+{% from 'btn/btn.njk' import btn %}
+{% from 'intro-card/intro-card.njk' import introCard %}
+<section class='new-collections'>
+  <div class='section-header'>
+    <div class='section-inner'>
+      <h2 class='section-title'>New Collections</h2>
+      <div class='section-text'>
+        <p>Be the first to get your hands on limited NFT drops, exclusive to NFTwow.</p>
+      </div>
+    </div>
+    {{
+      btn({
+        href: '#',
+        text: 'Explore'
+      })
+    }}
+  </div> {# /section-header #}
+
+  <div class='new-collections__cards'>
+    {% for card in newCollections %}
+    {{introCard(card)}}
+    {% endfor %}
+  </div>
+</section>
+
