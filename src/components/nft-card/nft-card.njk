@@ -1,0 +1,19 @@
+{% macro nftcard(props) %}
+<div class='nft-card'>
+  <div class='nft-card__img'>
+    <img src='./images/ending-soon/{{props.img}}' alt='{{props.name}}'>
+  </div>
+  <div class='nft-card__description'>
+    <div class='nft-card__description-left'>
+      <span class='nft-card__series'>{{props.series}}</span>
+      <span class='nft-card__name'>{{props.name}}</span>
+      <span class='nft-card__id'>#{{props.id}}</span>
+    </div>
+    <div class='nft-card__description-right'>
+      <span class='nft-card__top-bid'>Top Bid</span>
+      <span class='nft-card__price'>{{props.price}}</span>
+      <span class='nft-card__days'>{{props.days}}</span>
+    </div>
+  </div>
+</div>
+{% endmacro %}

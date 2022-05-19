@@ -1,0 +1,10 @@
+.ending-soon {
+  margin-bottom: 55px;
+}
+
+.nft-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 365px;
+  gap: 24px;
+}

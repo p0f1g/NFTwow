@@ -1,0 +1,23 @@
+{% from 'btn/btn.njk' import btn %}
+{% from 'nft-card/nft-card.njk' import nftcard %}
+<section class='ending-soon'>
+  <div class='section-header'>
+    <div class='section-inner'>
+      <h2 class='section-title'>Ending Soon</h2>
+      <div class='section-text'>
+        <p>Check out featured NFT auctions that are ending soon.</p>
+      </div>
+    </div>
+    {{
+      btn({
+        href: '#',
+        text: 'Explore'
+      })
+    }}
+  </div> {# /section-header #}
+  <div class='nft-cards'>
+    {% for nft in endingsoon %}
+      {{ nftcard(nft) }}
+    {% endfor %}
+  </div>
+</section>

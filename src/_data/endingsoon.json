@@ -1,0 +1,34 @@
+[
+  {
+    "img": "floppy.jpg",
+    "name": "Floppy",
+    "series": "Flowitars",
+    "id": "12",
+    "price": "2.99 ETH",
+    "days": "1 day left"
+  },
+  {
+    "img": "merlge.jpg",
+    "name": "Merlge",
+    "series": "Anna Kuife",
+    "id": "8745",
+    "price": "1.23 ETH",
+    "days": "2 days left"
+  },
+  {
+    "img": "starr-eyes.jpg",
+    "name": "Starr Eyes",
+    "series": "musikc",
+    "id": "192",
+    "price": "0.71 ETH",
+    "days": "3 days left"
+  },
+  {
+    "img": "help.jpg",
+    "name": "H e l p",
+    "series": "bloodflow",
+    "id": "54",
+    "price": "5.90 ETH",
+    "days": "5 days left"
+  }
+]
