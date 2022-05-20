@@ -26,8 +26,12 @@
   display: flex;
   justify-content: space-between;
   color: $color-light;
-  background-color: rgba(#000, 0.15);
+  background-color: rgba(#333, 0.15);
   backdrop-filter: blur(12px);
+
+  @supports not (backdrop-filter: blur(12px)) {
+    background-color: rgba(#555, 0.4);
+  }
 }
 
 .nft-card__description-left,

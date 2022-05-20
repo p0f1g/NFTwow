@@ -25,8 +25,12 @@
   width: 100%;
   color: $color-light;
   padding: 24px;
-  background-color: rgba(#000, 0.15);
+  background-color: rgba(#333, 0.1);
   backdrop-filter: blur(12px);
+
+  @supports not (backdrop-filter: blur(12px)) {
+    background-color: rgba(#555, 0.5);
+  }
 }
 
 .learn-card__title {
