@@ -1,11 +1,17 @@
 .social {
   display: flex;
   align-items: center;
+  color: $color-dark-3;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 16px;
 }
 
 .social__link {
   display: flex;
-  padding: 7px;
+  width: 18px;
+  height: 18px;
   text-decoration: none;
 }
 
@@ -14,5 +20,5 @@
 }
 
 .social__link:hover .social__icon {
-  fill: $color-accent;
+  fill: $color-dark-1;
 }
