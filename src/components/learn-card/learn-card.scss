@@ -23,7 +23,7 @@
   right: 0;
   bottom: 0;
   width: 100%;
-  color: $color-light;
+  color: #fff;
   padding: 24px;
   background-color: rgba(#333, 0.1);
   backdrop-filter: blur(12px);
@@ -37,9 +37,6 @@
   font-weight: 500;
   font-size: 12px;
   text-transform: uppercase;
-  color: $color-green;
+  color: #42ffd2;
   margin-bottom: 12px;
-}
-
-.learn-card__text {
 }

@@ -19,18 +19,18 @@
   }
 
   .intro-card:nth-child(4n + 1) {
-    background-color: #ffe6d8;
+    background-color: $color-card-4;
   }
 
   .intro-card:nth-child(4n + 2) {
-    background-color: #d8ecff;
+    background-color: $color-card-5;
   }
 
   .intro-card:nth-child(4n + 3) {
-    background-color: #ffd8eb;
+    background-color: $color-card-6;
   }
 
   .intro-card:nth-child(4n + 4) {
-    background-color: #fff4d8;
+    background-color: $color-card-7;
   }
 }

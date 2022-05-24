@@ -25,7 +25,7 @@
   &:focus {
     text-decoration: none;
     color: $color-btn-text;
-    box-shadow: 0 0 0 0.2em rgba($color-dark-3, 0.5);
+    box-shadow: 0 0 0 0.2em var(--color-btn--hover);
   }
 
   // &:visited {
@@ -44,12 +44,14 @@
   }
 
   &-primary {
-    background-color: $color-btn-primary;
+    color: #111;
+    background-color: var(--color-btn-primary);
 
     &:hover,
     &:focus {
-      background-color: $color-btn-primary;
-      box-shadow: 0 0 0 0.2em rgba($color-green-dark, 0.5);
+      background-color: var(--color-btn-primary);
+      color: #111;
+      box-shadow: 0 0 0 0.2em var(--color-btn-primary--hover);
     }
   }
 
@@ -58,7 +60,7 @@
 
     &:hover,
     &:focus {
-      box-shadow: 0 0 0 0.2em rgba($color-dark-3, 0.5);
+      box-shadow: 0 0 0 0.2em var(--color-btn--hover);
     }
   }
 
@@ -70,7 +72,7 @@
     &:hover,
     &:focus {
       background-color: transparent;
-      box-shadow: 0 0 0 0.2em rgba(#000, 0.3);
+      box-shadow: 0 0 0 0.2em var(--color-btn--hover);
     }
   }
 }

@@ -13,11 +13,11 @@
   position: relative;
   display: block;
   font-weight: 500;
-  color: $color-dark;
+  color: $color-nav-link;
 
   &::before {
     content: '';
-    background-color: $color-dark;
+    background-color: $color-nav-link;
     display: block;
     position: absolute;
     bottom: -3px;
@@ -27,7 +27,7 @@
     transition: width 0.25s ease-in-out;
   }
   &:hover {
-    color: $color-dark;
+    color: $color-nav-link;
   }
 
   &:hover::before {

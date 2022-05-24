@@ -5,9 +5,19 @@
 
 .press__items {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 210px);
-  gap: 45px;
+  grid-template-columns: repeat(auto-fit, 130px);
+  column-gap: 40px;
+  row-gap: 30px;
   justify-content: center;
+
+  @include media-up(sm) {
+    grid-template-columns: repeat(auto-fit, 170px);
+    column-gap: 50px;
+  }
+
+  @include media-up(lg) {
+    justify-content: space-between;
+  }
 }
 
 .press-item {

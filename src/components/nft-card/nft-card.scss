@@ -25,7 +25,7 @@
   padding: 24px;
   display: flex;
   justify-content: space-between;
-  color: $color-light;
+  color: #fff;
   background-color: rgba(#333, 0.15);
   backdrop-filter: blur(12px);
 
@@ -48,7 +48,7 @@
   font-weight: 500;
   font-size: 12px;
   text-transform: uppercase;
-  color: $color-green;
+  color: #42ffd2;
 }
 
 .nft-card__name,
@@ -75,7 +75,7 @@
 .nft-card__id,
 .nft-card__days {
   font-size: 16px;
-  color: $color-dark-2;
+  color: #777;
 }
 
 .nft-card__top-bid {

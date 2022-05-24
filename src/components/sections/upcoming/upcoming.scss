@@ -17,7 +17,7 @@
   font-weight: 500;
   font-size: 22px;
   line-height: 1.5;
-  color: $color-dark;
+  color: $color-title;
   margin-bottom: 0.73em;
 }
 
@@ -32,5 +32,12 @@
     .intro-card {
       width: 50%;
     }
+  }
+
+  .intro-card:nth-child(2n + 1) {
+    background-color: $color-card-2;
+  }
+  .intro-card:nth-child(2n + 2) {
+    background-color: $color-card-3;
   }
 }

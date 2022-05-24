@@ -4,7 +4,7 @@
 
 .trending__item {
   counter-increment: trend;
-  border-top: 1px solid $color-light-1;
+  border-top: 1px solid $color-nft-divider;
 }
 
 .trending__link {
@@ -30,7 +30,7 @@
     display: inline-block;
     width: 16px;
     height: 16px;
-    background-color: $color-green;
+    background-color: #42ffd2;
     background-image: url(../images/svg/check.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -61,7 +61,7 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
-  color: $color-dark;
+  color: $color-title;
 
   @include media-down(sm) {
     margin-bottom: 12px;
@@ -78,11 +78,11 @@
   line-height: 1.2;
 
   &--plus {
-    color: $color-green-dark;
+    color: $color-nft-percent--plus;
   }
 
   &--minus {
-    color: $color-red-dark;
+    color: $color-nft-percent--minus;
   }
 }
 

@@ -7,25 +7,135 @@ $line-height: 1.5;
 $border-radius: 8px;
 $container: 1392px;
 
-$color-dark: #111;
-$color-dark-1: #555;
-$color-dark-2: #777;
-$color-dark-3: #999;
-$color-light: #fff;
-$color-light-1: #eee;
-$color-light-2: #ddd;
-$color-light-3: #ccc;
-$color-green: #42ffd2;
-$color-green-dark: #00a47c;
-$color-red: #ff4242;
-$color-red-dark: #c60202;
+// LIGHT MODE
+:root {
+  --color-title: #111;
+  --color-subtitle: #555;
+  --color-text: #555;
+  --color-nav-link: #111;
+  --color-bg: #eee;
+  --color-bg-form: #fff;
+  --color-bg-burger: #111;
+  --color-bg-mobile-menu: rgba(221, 221, 221, 0.95);
+  --color-divider: #ccc;
+  --color-social: #999;
+  --color-social--hover: #555;
+  --color-card-1: #fff;
+  --color-card-2: #ffd8e6;
+  --color-card-3: #f2d8ff;
+  --color-card-4: #ffe6d8;
+  --color-card-5: #d8ecff;
+  --color-card-6: #ffd8eb;
+  --color-card-7: #fff4d8;
+  --color-nft-divider: #eee;
+  --color-nft-percent--plus: #00a47c;
+  --color-nft-percent--minus: #c60202;
+  --color-btn: #fff;
+  --color-btn--hover: rgba(153, 153, 153, 0.5);
+  --color-btn-primary: #42ffd2;
+  --color-btn-primary--hover: rgba(0, 164, 124, 0.7);
+  --color-btn-secondary: #eee;
+  --color-btn-text: #111;
+  --color-menu-list: #555;
+  --color-menu-title: #999;
+}
 
-$color-text: $color-dark-1;
-$color-bg: $color-light-1;
-$color-btn: $color-light;
-$color-btn-primary: $color-green;
-$color-btn-secondary: $color-light-1;
-$color-btn-text: $color-dark;
+@media (prefers-color-scheme: dark) {
+  body:not([data-theme='light']) {
+    --color-title: #fff;
+    --color-subtitle: #ccc;
+    --color-text: #ddd;
+    --color-nav-link: #fff;
+    --color-bg: #111;
+    --color-bg-form: #111;
+    --color-bg-burger: #fff;
+    --color-bg-mobile-menu: rgba(17, 17, 17, 0.85);
+    --color-divider: #555;
+    --color-social: #999;
+    --color-social--hover: #fff;
+    --color-card-1: #222;
+    --color-card-2: #671633;
+    --color-card-3: #4e1768;
+    --color-card-4: #603015;
+    --color-card-5: #1a4771;
+    --color-card-6: #5c1638;
+    --color-card-7: #614c16;
+    --color-nft-divider: #555;
+    --color-nft-percent--plus: #42ffd2;
+    --color-nft-percent--minus: #ff4242;
+    --color-btn: #555;
+    --color-btn--hover: rgba(255, 255, 255, 0.5);
+    --color-btn-primary: #42ffd2;
+    --color-btn-primary--hover: rgba(66, 255, 210, 0.7);
+    --color-btn-secondary: #555;
+    --color-btn-text: #fff;
+    --color-menu-list: #999;
+    --color-menu-title: #777;
+
+    .logo__img {
+      filter: invert(1);
+    }
+  }
+}
+
+body[data-theme='dark'] {
+  --color-title: #fff;
+  --color-subtitle: #ccc;
+  --color-text: #ddd;
+  --color-nav-link: #fff;
+  --color-bg: #111;
+  --color-bg-form: #111;
+  --color-bg-burger: #fff;
+  --color-bg-mobile-menu: rgba(17, 17, 17, 0.9);
+  --color-divider: #555;
+  --color-social: #999;
+  --color-social--hover: #fff;
+  --color-card-1: #222;
+  --color-card-2: #671633;
+  --color-card-3: #4e1768;
+  --color-card-4: #603015;
+  --color-card-5: #1a4771;
+  --color-card-6: #5c1638;
+  --color-card-7: #614c16;
+  --color-nft-divider: #555;
+  --color-nft-percent--plus: #42ffd2;
+  --color-nft-percent--minus: #ff4242;
+  --color-btn: #555;
+  --color-btn--hover: rgba(255, 255, 255, 0.5);
+  --color-btn-primary: #42ffd2;
+  --color-btn-primary--hover: rgba(66, 255, 210, 0.7);
+  --color-btn-secondary: #555;
+  --color-btn-text: #fff;
+  --color-menu-list: #999;
+  --color-menu-title: #777;
+}
+
+$color-title: var(--color-title);
+$color-subtitle: var(--color-subtitle);
+$color-text: var(--color-text);
+$color-nav-link: var(--color-nav-link);
+$color-bg: var(--color-bg);
+$color-bg-form: var(--color-bg-form);
+$color-bg-burger: var(--color-bg-burger);
+$color-divider: var(--color-divider);
+$color-social: var(--color-social);
+$color-social--hover: var(--color-social--hover);
+$color-card-1: var(--color-card-1);
+$color-card-2: var(--color-card-2);
+$color-card-3: var(--color-card-3);
+$color-card-4: var(--color-card-4);
+$color-card-5: var(--color-card-5);
+$color-card-6: var(--color-card-6);
+$color-card-7: var(--color-card-7);
+$color-nft-divider: var(--color-nft-divider);
+$color-nft-percent--plus: var(--color-nft-percent--plus);
+$color-nft-percent--minus: var(--color-nft-percent--minus);
+$color-btn: var(--color-btn);
+$color-btn-primary: var(--color-btn-primary);
+$color-btn-secondary: var(--color-btn-secondary);
+$color-btn-text: var(--color-btn-text);
+$color-menu-list: var(--color-menu-list);
+$color-menu-title: var(--color-menu-title);
 
 $grid-breakpoints: (
   xs: 0,
